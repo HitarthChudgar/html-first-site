@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hitarth Chudgar</title>
 </head>
 
@@ -14,11 +15,11 @@
         <img src="images/aboutme.png" alt="Hitarth Profile Picture">
       </td>
       <td>
-          <!-- indenting is extremely important in HTML according to developers-->
-          <h1>Hitarth Chudgar</h1>
-          <!-- emphasis and strong over <b> and <i> tags because structure is more crucial than style-->
-          <p>User Experience Designer</p>
-          <p>I am a <em>visual problem solver </em> who love all things related to <strong>motion</strong>, sound, design and product related goodness! 😊</p>
+        <!-- indenting is extremely important in HTML according to developers-->
+        <h1>Hitarth Chudgar</h1>
+        <!-- emphasis and strong over <b> and <i> tags because structure is more crucial than style-->
+        <p>User Experience Designer</p>
+        <p>I am a <em>visual problem solver </em> who love all things related to <strong>motion</strong>, sound, design and product related goodness! 😊</p>
       </td>
     </tr>
   </table>
@@ -114,6 +115,44 @@
   <p><a href="projects.html">Relevant Projects</a></p>
 
   <p><a href="contact.html">Contact Me</a></p>
+
+  <h3>Playing Videos</h3>
+
+  <!-- video tag, playsinline for safari rest attributes are self explnatory, controls helps add the controls-->
+  <video playsinline controls mute="true" loop="true" autoplay="true" src="images/promoexperimental.mp4"></video>
+
+  <!-- youtube videos playing share -> embed code for allowfullscreen-->
+  <h3>Playing Youtube Videos</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/QNk3WX33SGc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <!-- checkbox and radio buttons-->
+  <h3>Checkbox</h3>
+  <input type="checkbox">
+  <h3>Radio</h3>
+  <input type="radio">
+  <br>
+
+  <!-- input and password, we use label so when we click on the text it directs us to input tag for=id-->
+  <label for="myUser">Username</label>
+  <input type="text" id="myUser">
+
+  <label for="secure">Password</label>
+  <input type="password" id="secure">
+
+  <!-- dropdown menu, name attribute is for backend while id is for css styling-->
+  <h3>Dropdown</h3>
+  <select name="degree" id="degree">
+    <option value="College Diploma">Diploma</option>
+    <option value="College Bachelors">Bachelors</option>
+    <option value="College Masters">Masters</option>
+    <option value="College Doctorate">P.Hd</option>
+  </select>
+
+  <!-- buttons examples; class can be used multiple times while id only once per page-->
+  <button class="test">Sign Up</button>
+  <button>Explore</button>
+
+
 </body>
 
 </html>
